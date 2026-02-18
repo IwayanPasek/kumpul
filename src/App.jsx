@@ -718,7 +718,7 @@ export default function App() {
                   <Phone size={15} style={{ color: "#38bdf8", flexShrink: 0, marginTop: 3 }} />
                   <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                     <div>
-                      <p style={{ fontSize: 11, color: "#38bdf8", fontWeight: 600, margin: "0 0 2px" }}>Admin Pemesanan</p>
+                      <p style={{ fontSize: 11, color: "#38bdf8", fontWeight: 600, margin: "0 0 2px" }}>Kadek Wiwik Ayukanti</p>
                       <a
                         href={WA_LINK} target="_blank" rel="noreferrer"
                         style={{ color: "#94a3b8", fontSize: 13, textDecoration: "none" }}
@@ -729,7 +729,7 @@ export default function App() {
                       </a>
                     </div>
                     <div>
-                      <p style={{ fontSize: 11, color: "#38bdf8", fontWeight: 600, margin: "0 0 2px" }}>Admin Layanan Khusus</p>
+                      <p style={{ fontSize: 11, color: "#38bdf8", fontWeight: 600, margin: "0 0 2px" }}>I Nengah Karsana</p>
                       <a
                         href={WA_LINK_2} target="_blank" rel="noreferrer"
                         style={{ color: "#94a3b8", fontSize: 13, textDecoration: "none" }}
