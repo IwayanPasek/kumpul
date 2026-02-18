@@ -711,7 +711,7 @@ export default function App() {
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                   <MapPin size={15} style={{ color: "#38bdf8", marginTop: 2, flexShrink: 0 }} />
                   <span style={{ fontSize: 13, lineHeight: 1.55 }}>
-                    Jl. Contoh No. 1,<br />Kota Anda, Indonesia
+                    Banjar Tabunan, Kecamatan Tembuku
                   </span>
                 </div>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
