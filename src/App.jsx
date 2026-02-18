@@ -686,7 +686,7 @@ export default function App() {
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                   <MapPin size={15} style={{ color: "#38bdf8", marginTop: 2, flexShrink: 0 }} />
                   <span style={{ fontSize: 13, lineHeight: 1.55 }}>
-                    Jl. Contoh No. 1,<br />Kota Anda, Indonesia
+                    Br.Tabunan, Kecamatan Tembuku
                   </span>
                 </div>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
@@ -700,7 +700,7 @@ export default function App() {
                         onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
                       >
-                        +62 812-3456-7890
+                        +6282236220225
                       </a>
                     </div>
                     <div>
@@ -711,7 +711,7 @@ export default function App() {
                         onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
                       >
-                        +62 898-7654-3210
+                        +6281236021109
                       </a>
                     </div>
                   </div>
