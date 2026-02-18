@@ -725,7 +725,7 @@ export default function App() {
                         onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
                       >
-                        +62 812-3456-7890
+                        +62 822-3622-0225
                       </a>
                     </div>
                     <div>
@@ -736,7 +736,7 @@ export default function App() {
                         onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
                       >
-                        +62 898-7654-3210
+                        +62 812-3602-1109
                       </a>
                     </div>
                   </div>
