@@ -13,6 +13,7 @@ import {
   X,
   Sparkles,
   Star,
+  Zap,
 } from "lucide-react";
 
 // Nomor 1 — Admin Pemesanan
@@ -51,22 +52,39 @@ export default function App() {
 
   const services = [
     {
-      icon: <Shirt size={32} strokeWidth={1.5} />,
-      title: "Setrika Saja",
-      desc: "Pakaian sudah dicuci tapi masih kusut? Kami rapikan dengan setrika uap supaya kembali kece.",
-      tag: "Favorit",
+      icon: <Sparkles size={32} strokeWidth={1.5} />,
+      title: "Cuci Lengkap",
+      desc: "Paket komplit: cuci, keringkan, dan setrika. Pakaianmu kembali bersih, rapi, dan wangi.",
+      price: 6000,
+      tag: "Terlengkap",
     },
     {
-      icon: <Wind size={32} strokeWidth={1.5} />,
-      title: "Keringkan Saja",
-      desc: "Tinggal dikeringkan? Bisa! Kami pastikan pakaianmu kering sempurna dan bebas lembap.",
+      icon: <WashingMachine size={32} strokeWidth={1.5} />,
+      title: "Kering Setrika",
+      desc: "Pakaian dikeringkan lalu disetrika rapi. Cocok buat yang udah cuci sendiri tapi butuh hasil sempurna.",
+      price: 4000,
       tag: null,
     },
     {
-      icon: <Sparkles size={32} strokeWidth={1.5} />,
-      title: "Cuci Lengkap",
-      desc: "Paket lengkap: cuci, keringkan, dan setrika. Pakaianmu kembali bersih, rapi, dan wangi.",
-      tag: "Terlengkap",
+      icon: <Wind size={32} strokeWidth={1.5} />,
+      title: "Kering Saja",
+      desc: "Tinggal dikeringkan? Bisa! Kami pastikan pakaianmu kering sempurna dan bebas lembap.",
+      price: 2500,
+      tag: null,
+    },
+    {
+      icon: <Shirt size={32} strokeWidth={1.5} />,
+      title: "Setrika Saja",
+      desc: "Sudah dicuci dan kering tapi masih kusut? Kami rapikan dengan setrika uap supaya kembali kece.",
+      price: 3500,
+      tag: "Favorit",
+    },
+    {
+      icon: <Zap size={32} strokeWidth={1.5} />,
+      title: "Express",
+      desc: "Butuh cepat? Layanan express kami siap memproses pakaianmu lebih prioritas dan kilat.",
+      price: 7000,
+      tag: "Cepat",
     },
   ];
 
@@ -515,7 +533,7 @@ export default function App() {
 
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
             gap: 16,
           }}>
             {services.map((s, i) => (
@@ -541,10 +559,17 @@ export default function App() {
                 }}>
                   {s.icon}
                 </div>
-                <h3 style={{ fontSize: 17, fontWeight: 700, color: "#0c2a3b", margin: "0 0 10px" }}>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: "#0c2a3b", margin: "0 0 6px" }}>
                   {s.title}
                 </h3>
-                <p style={{ fontSize: 14, lineHeight: 1.65, color: "#4d7184", margin: 0, flex: 1 }}>
+                {/* Price badge */}
+                <div style={{ display: "flex", alignItems: "baseline", gap: 4, marginBottom: 10 }}>
+                  <span style={{ fontSize: 22, fontWeight: 800, color: "#0ea5e9" }}>
+                    Rp {s.price.toLocaleString("id-ID")}
+                  </span>
+                  <span style={{ fontSize: 12, color: "#94a3b8", fontWeight: 500 }}>/kg</span>
+                </div>
+                <p style={{ fontSize: 13, lineHeight: 1.65, color: "#4d7184", margin: 0, flex: 1 }}>
                   {s.desc}
                 </p>
                 <a
@@ -686,7 +711,7 @@ export default function App() {
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                   <MapPin size={15} style={{ color: "#38bdf8", marginTop: 2, flexShrink: 0 }} />
                   <span style={{ fontSize: 13, lineHeight: 1.55 }}>
-                    Br.Tabunan, Kecamatan Tembuku
+                    Jl. Contoh No. 1,<br />Kota Anda, Indonesia
                   </span>
                 </div>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
@@ -700,7 +725,7 @@ export default function App() {
                         onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
                       >
-                        +6282236220225
+                        +62 812-3456-7890
                       </a>
                     </div>
                     <div>
@@ -711,7 +736,7 @@ export default function App() {
                         onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
                       >
-                        +6281236021109
+                        +62 898-7654-3210
                       </a>
                     </div>
                   </div>
