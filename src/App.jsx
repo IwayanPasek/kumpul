@@ -16,14 +16,14 @@ import {
 } from "lucide-react";
 
 // Nomor 1 — Admin Pemesanan
-const WA_LINK = "https://wa.me/6281236021109";
+const WA_LINK = "https://wa.me/6282236220225";
 const WA_ORDER =
-  "https://wa.me/6289876543210?text=Halo%2C%20saya%20mau%20tanya%20soal%20layanan%20khusus%20pakaian%20saya.";
+  "https://wa.me/6282236220225?text=Halo%2C%20saya%20mau%20pesan%20antar%20jemput%20laundry.";
 
 // Nomor 2 — Admin Layanan Khusus
-const WA_LINK_2 = "https://wa.me/628236220225";
+const WA_LINK_2 = "https://wa.me/6281236021109";
 const WA_CUSTOM =
-  "https://wa.me/6289876543210?text=Halo%2C%20saya%20mau%20tanya%20soal%20layanan%20khusus%20pakaian%20saya.";
+  "https://wa.me/6281236021109?text=Halo%2C%20saya%20mau%20tanya%20soal%20layanan%20khusus%20pakaian%20saya.";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -686,32 +686,32 @@ export default function App() {
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                   <MapPin size={15} style={{ color: "#38bdf8", marginTop: 2, flexShrink: 0 }} />
                   <span style={{ fontSize: 13, lineHeight: 1.55 }}>
-                    Br. Tabunan
+                    Jl. Contoh No. 1,<br />Kota Anda, Indonesia
                   </span>
                 </div>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                   <Phone size={15} style={{ color: "#38bdf8", flexShrink: 0, marginTop: 3 }} />
                   <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                     <div>
-                      <p style={{ fontSize: 11, color: "#38bdf8", fontWeight: 600, margin: "0 0 2px" }}>I Nengah Karsana</p>
+                      <p style={{ fontSize: 11, color: "#38bdf8", fontWeight: 600, margin: "0 0 2px" }}>Admin Pemesanan</p>
                       <a
                         href={WA_LINK} target="_blank" rel="noreferrer"
                         style={{ color: "#94a3b8", fontSize: 13, textDecoration: "none" }}
                         onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
                       >
-                        +62 812-3602-1109
+                        +62 812-3456-7890
                       </a>
                     </div>
                     <div>
-                      <p style={{ fontSize: 11, color: "#38bdf8", fontWeight: 600, margin: "0 0 2px" }}>Kadek Wiwik Ayukanti</p>
+                      <p style={{ fontSize: 11, color: "#38bdf8", fontWeight: 600, margin: "0 0 2px" }}>Admin Layanan Khusus</p>
                       <a
                         href={WA_LINK_2} target="_blank" rel="noreferrer"
                         style={{ color: "#94a3b8", fontSize: 13, textDecoration: "none" }}
                         onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
                       >
-                        +62 82-3622-0225
+                        +62 898-7654-3210
                       </a>
                     </div>
                   </div>
